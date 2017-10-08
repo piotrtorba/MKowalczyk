@@ -1,0 +1,175 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+/*Jumbotron and Navi Section*/
+nav {
+	position: fixed;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background: #000000;
+	opacity: 0.7;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+}
+nav li {
+	list-style-type: none;
+}
+nav ul li a {
+	margin: 10px 55px;
+	padding: 0px 15px;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 23px;
+	font-family: 'Dosis', sans-serif;
+}
+nav ul li a:hover {
+	cursor: pointer;
+	color: #BBBCBD;
+	transition: 0.5s;
+}
+.jumbotron {
+	background-image: url("background.jpg");
+	background-size: cover;
+	width: 100%;
+}
+.jumbotron h1 {
+	color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 33px;
+	font-weight: bold;
+	font-family: 'Dosis', sans-serif;
+	padding-top: 11em;
+}
+/*O mnie Section*/
+.omnie {
+	margin-top: 3.7em;
+	width: 100%;
+}
+.omnie img {
+	margin: 10px 15px;
+	float: left;
+	border-radius: 5px;
+}
+.omnie p {
+	font-size: 23px;
+	font-family: 'Dosis', sans-serif;
+	margin: 0px 25px;
+	padding: 20px;
+	font-weight: bold;
+	text-align: justify;
+}
+.omnine:before,
+.omnie:after {
+  content: "";
+  display: table;
+} 
+.omnie:after {
+  clear: both;
+}
+/*Projekty Section*/
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+	padding: 10px 15px;
+	text-align: center;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}
+
+.container {
+	margin-top: 4em;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.col-4 img {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 10px 15px;
+	padding: 0px 15px;
+	width: 350px;
+	height: 150px;
+	border-radius: 5%;
+}
+.col-4 img:hover {
+	cursor: pointer;
+	transform: scale(1.5, 1.5);
+	transition: 0.9s;
+}/*Kontakt Section*/
+.kontakt {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 12em;
+}
+address {
+	color: #000000;
+	font-size: 23px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+}
+h1 {
+	color: #000000;
+	font-size: 23px;
+	font-family: 'Dosis', sans-serif;
+}
+.email {
+	border-radius: 50%;
+}
+.kontakt img {
+	margin: 0px 25px;
+}
+.kontakt address, h1 {
+	margin: 0px 15px;
+}
+/*Footer*/
+footer {
+	display: flex;
+	position: fixed;
+	bottom: 0px;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	line-height: 25px;
+	background: #000000;
+	opacity: 0.7;
+}
+footer p {
+	margin: 0 auto;
+	color: #FFF;
+	font-family: 'Dosis', sans-serif;
