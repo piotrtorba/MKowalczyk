@@ -177,6 +177,8 @@ footer p {
 }
 @media screen and (max-width: 768px) {
 	nav {
+		display: flex;
+		flex-direction: column;
 		background: #595B5C;
 		opacity: 1;
 	}
@@ -185,16 +187,15 @@ footer p {
 		flex-direction: column;
 		margin: 0px;
 		padding: 0px;
-		width: 100%;
 	}
 	nav ul li {
 		margin: 0px;
 		padding: 0px;
 		line-height: 2em;
 		border-bottom: 1px solid #000000;
-		width: 100%;
 	}
 	nav ul li a {
+		display: inline-block;
 		margin: 3px 5px;
 		padding: 0px;
 		width: 100%;
@@ -206,24 +207,26 @@ footer p {
 		display: none;
 	}
 	.omnie p {
-		margin-top: 5.5em;
+		margin-top: 6.1em;
 		margin-bottom: 2em;
 	}
-	.col-12 {
-		margin-top: 5.5em;
-		margin-bottom: 3em;
-		padding: 0px;
-	}
-	.col-12 img {
-		margin: 0px;
-		padding: 5px 0px;
+	[class*="col-"] {
 		width: 100%;
-		border-radius: 0%;
-	}
-	.col-12 img:hover {
-		transform: none;
-	}
-	.kontakt {
+		padding: 0px;
+    }
+    .row {
+    	margin-top: 6em;
+    	margin-bottom: 3em;
+    }
+    .col-4 img {
+    	padding: 0px;
+    	width: 100vw;
+    	border-radius: 0px;
+    }
+    .col-4 img:hover {
+    	transform: none;
+    }
+    .kontakt {
 		display: flex;
 		flex-direction: column;
 		margin-top: 10em;
