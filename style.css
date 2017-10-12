@@ -204,6 +204,9 @@ footer p {
 	.jumbotron {
 		background: none;
 	}
+	.jumbotron h1 {
+		text-align: center;
+	}
 	.omnie img {
 		display: none;
 	}
@@ -222,7 +225,7 @@ footer p {
     }
     .col-4 img {
     	padding: 0px;
-    	width: 100vw;
+    	width: 100%;
     	border-radius: 0px;
     }
     .col-4 img:hover {
