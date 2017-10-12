@@ -217,6 +217,9 @@ footer p {
 		margin-top: 6.1em;
 		margin-bottom: 2em;
 	}
+	.container {
+		padding: 0px;
+	}
 	[class*="col-"] {
 		width: 100%;
 		margin: 0px;
