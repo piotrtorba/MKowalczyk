@@ -116,10 +116,12 @@ nav ul li a:hover {
 	justify-content: center;
 	width: 100%;
 }
-.col-4 img {
+.row {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+.col-4 img {
 	margin: 10px 15px;
 	padding: 0px 15px;
 	width: 350px;
@@ -222,8 +224,10 @@ footer p {
     .row {
     	margin-top: 6em;
     	margin-bottom: 3em;
+    	flex-direction: column;
     }
     .col-4 img {
+    	margin: 5px 0px;
     	padding: 0px;
     	width: 100%;
     	border-radius: 0px;
