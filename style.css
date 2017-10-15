@@ -266,13 +266,13 @@ footer p {
     	margin-bottom: 3em;
     	flex-direction: column;
     }
-    .col-4 img {
+    .visual img, .models img {
     	margin: 5px 0px;
     	padding: 0px;
     	width: 100%;
     	border-radius: 0px;
     }
-    .col-4 img:hover {
+    .visual img:hover, .models img:hover {
     	transform: none;
     }
     .kontakt {
