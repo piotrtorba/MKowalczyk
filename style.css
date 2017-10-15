@@ -57,9 +57,11 @@ nav ul li a:hover {
 	width: 100%;
 }
 .omnie img {
-	margin: 10px 15px;
+	width: 20%;
+	height: 18em;
+	padding: 0px 15px;
+	margin: 10px 35px;
 	float: left;
-	border-radius: 5px;
 }
 .omnie p {
 	font-size: 23px;
@@ -122,18 +124,52 @@ nav ul li a:hover {
 	flex-direction: row;
 	justify-content: center;
 }
-.col-4 img {
-	margin: 10px 0px;
-	padding: 0px 15px;
-	width: 350px;
-	height: 150px;
-	border-radius: 5%;
+.col-6 {
+	margin-bottom: 60px;
 }
-.col-4 img:hover {
-	cursor: pointer;
-	transform: scale(1.5, 1.5);
-	transition: 0.9s;
-}/*Kontakt Section*/
+button.wizualizacje, button.modele {
+	width: 350px;
+	height: 220px;
+    margin-top: 10%;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 23px;
+	font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+button.wizualizacje img, button.modele img {
+  width: 100%;
+  height: 80%;
+}
+button.wizualizacje:active, button.wizualizacje:hover, button.modele:active, button.modele:hover {
+    opacity: 0.5;
+}
+.visual, .models {
+    margin-top: 10%;
+    display: none;
+}
+.visual img, .models img {
+    margin-top: 5%;
+    width: auto;
+    height: 280px;
+    border-radius: 10px;
+}
+.visual img:hover, .models img:hover {
+  cursor: pointer;
+  transform: scale( 1.5, 1.5);
+  transition: 0.9s;
+}
+.visual p, .models p {
+	font-family: 'Dosis', sans-serif;
+	font-size: 23px;
+	width: 100%;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	border-bottom: 1px dotted #000000;
+}
+/*Kontakt Section*/
 .kontakt {
 	display: flex;
 	flex-direction: row;
