@@ -15,6 +15,12 @@ nav {
 	background: #000000;
 	opacity: 0.7;
 }
+nav img {
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	height: 33px;
+}
 nav ul {
 	display: flex;
 	flex-direction: row;
@@ -58,9 +64,9 @@ nav ul li a:hover {
 }
 .omnie img {
 	width: 20%;
-	height: 18em;
-	padding: 0px 15px;
-	margin: 10px 35px;
+	height: 17em;
+	padding: 0px 25px;
+	margin: 10px 15px;
 	float: left;
 }
 .omnie p {
@@ -220,8 +226,14 @@ footer p {
 	nav {
 		display: flex;
 		flex-direction: column;
+		position: static;
 		background: #595B5C;
 		opacity: 1;
+	}
+	nav img {
+		position: relative;
+		top: 0px;
+		margin: 3px auto;
 	}
 	nav ul {
 		display: flex;
@@ -233,28 +245,37 @@ footer p {
 		margin: 0px;
 		padding: 0px;
 		line-height: 2em;
-		border-bottom: 1px solid #000000;
+		border-top: 1px solid #000000;
 	}
 	nav ul li a {
 		display: inline-block;
-		margin: 3px 5px;
-		padding: 0px;
+		margin: 3px 0px;
+		padding-left: 5px;
 		width: 100%;
 	}
 	.jumbotron {
 		background: none;
+		height: auto;
 	}
 	.jumbotron h1 {
 		text-align: center;
+		margin: 0px;
+		padding-top: 20vh;
+	}
+	.omnie {
+		margin-top: 1em;
 	}
 	.omnie img {
 		display: none;
 	}
 	.omnie p {
-		margin-top: 6.1em;
-		margin-bottom: 2em;
+		padding: 2px;
+		margin-bottom: 2.5em;
 	}
 	.container {
+		width: 100%;
+		margin-top: 0px;
+		margin-bottom: 4em;
 		padding: 0px;
 	}
 	[class*="col-"] {
@@ -263,8 +284,6 @@ footer p {
 		padding: 0px;
     }
     .row {
-    	margin-top: 6em;
-    	margin-bottom: 3em;
     	flex-direction: column;
     }
     .visual img, .models img {
@@ -279,11 +298,11 @@ footer p {
     .kontakt {
 		display: flex;
 		flex-direction: column;
-		margin-top: 10em;
+		margin-top: 2em;
 		margin-bottom: 4em;
 	}
 	.kontakt img {
-		margin: 10px 0px;
+		margin: 13px 0px;
 	}
 	.kontakt address {
 		text-align: center;
@@ -294,4 +313,29 @@ footer p {
 		display: flex;
 		flex-direction: column;
 	}
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	.container {
+		width: 100%;
+		margin-top: 0px;
+		margin-bottom: 4em;
+		padding: 0px;
+	}
+	[class*="col-"] {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+    }
+    .row {
+    	flex-direction: column;
+    }
+    .visual img, .models img {
+    	margin: 5px 0px;
+    	padding: 0px;
+    	width: 70%;
+    	border-radius: 0px;
+    }
+    .visual img:hover, .models img:hover {
+    	transform: none;
+    }
 }
