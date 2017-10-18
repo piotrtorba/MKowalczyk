@@ -1,8 +1,17 @@
+function MyMenu() {
+    var x = document.getElementById("menu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
 var acc = document.getElementsByClassName("wizualizacje");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
+    acc[i].onclick = function() {
         this.classList.toggle("active");
 
         var visual = this.nextElementSibling;
