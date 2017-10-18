@@ -276,7 +276,7 @@ footer p {
 	.jumbotron h1 {
 		text-align: center;
 		margin: 0px;
-		padding-top: 20vh;
+		padding-top: auto;
 	}
 	.omnie {
 		margin-top: 1em;
@@ -286,6 +286,7 @@ footer p {
 	}
 	.omnie p {
 		padding: 2px;
+		margin-top: 2.5em;
 		margin-bottom: 2.5em;
 	}
 	.container {
@@ -301,6 +302,7 @@ footer p {
     }
     .row {
     	flex-direction: column;
+    	margin-top: 2.5em;
     }
     .visual img, .models img {
     	margin: 5px 0px;
@@ -314,7 +316,7 @@ footer p {
     .kontakt {
 		display: flex;
 		flex-direction: column;
-		margin-top: 2em;
+		margin-top: 2.5em;
 		margin-bottom: 4em;
 	}
 	.kontakt img {
